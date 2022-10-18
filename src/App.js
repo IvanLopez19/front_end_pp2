@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Calendario from './Components/Calendario.js';
+import Carrusel from './Components/Carrusel.js';
+import Horarios from './Components/Horarios.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carrusel/>
+      <Calendario/>
+      <Horarios/>
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
     </div>
   );
 }
