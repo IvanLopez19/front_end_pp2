@@ -21,7 +21,7 @@ export default function NavBar() {
                                 <NavLink className="nav-link" to="/reserva">Reservar</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/partidos">Partidos</NavLink>
+                                <NavLink className="nav-link" to="/torneos">Torneos</NavLink>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
