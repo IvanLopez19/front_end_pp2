@@ -1,0 +1,17 @@
+.contprinhor{
+    background-color: #f28465;
+    border-radius: 25px 25px 0 0;
+    padding: 25px;
+}
+
+.card{
+    border-radius: 15px;
+}
+
+.boton{
+    background-color: #2a76af;
+    margin: 50px 0 50px 0;
+    color: white;
+    border: 0;
+    font-weight: 500;
+}

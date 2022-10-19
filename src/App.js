@@ -1,14 +1,15 @@
-import Calendario from './Components/Calendario.js';
-import Carrusel from './Components/Carrusel.js';
-import Horarios from './Components/Horarios.js';
+import Calendario from './Components/Calendario/Calendario.js';
+import Carrusel from './Components/Carrusel/Carrusel.js';
+import Horarios from './Components/Horarios/Horarios.js';
+import Descripcion from './Components/Descripcion/Descripcion.js';
 
 function App() {
   return (
     <div className="App">
       <Carrusel/>
+      <Descripcion cancha="Cancha hola" descripcion="Esta cancha es bien chiva"/>
       <Calendario/>
       <Horarios/>
-      <button type="button" class="btn btn-primary btn-lg">Large button</button>
     </div>
   );
 }

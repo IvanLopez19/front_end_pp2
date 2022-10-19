@@ -1,0 +1,12 @@
+.contprin{
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.contsec{
+    height: 100%;
+}
+
+.conttir{
+    object-fit: contain;
+}
