@@ -1,16 +1,26 @@
-import Calendario from './Components/Calendario/Calendario.js';
-import Carrusel from './Components/Carrusel/Carrusel.js';
-import Horarios from './Components/Horarios/Horarios.js';
-import Descripcion from './Components/Descripcion/Descripcion.js';
+//imports
+import{
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+//imports pages
+import NavBar from "./Components/NavBar.js";
+import HomePage from './pages/HomePage.js';
+import Reserva from './pages/Reserva.js';
+import NotFoundPage from "./pages/NotFound.js";
 
 function App() {
   return (
-    <div className="App">
-      <Carrusel/>
-      <Descripcion cancha="Cancha hola" descripcion="Esta cancha es bien chiva"/>
-      <Calendario/>
-      <Horarios/>
-    </div>
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/reserva" element={<Reserva/>}/>
+        <Route path="*" element={<NotFoundPage/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
