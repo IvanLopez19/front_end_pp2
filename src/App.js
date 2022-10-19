@@ -9,6 +9,7 @@ import{
 import NavBar from "./Components/NavBar.js";
 import HomePage from './pages/HomePage.js';
 import Reserva from './pages/Reserva.js';
+import Partidos from "./pages/Partidos.js";
 import NotFoundPage from "./pages/NotFound.js";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/reserva" element={<Reserva/>}/>
+        <Route path="/partidos" element={<Partidos/>}/>
         <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>

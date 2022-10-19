@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function HomePage() {
+export default function Partidos() {
     return (
         <div className="container-fluid">
-            Home Page
+            Lista de partidos por torneos
         </div>
     )
 }

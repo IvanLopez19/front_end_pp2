@@ -5,7 +5,7 @@ import Descripcion from '../Components/Descripcion/Descripcion.js';
 
 function Reserva() {
   return (
-    <div className="App">
+    <div className="container-fluid">
       <Carrusel/>
       <Descripcion cancha="Cancha hola" descripcion="Esta cancha es bien chiva"/>
       <Calendario/>
