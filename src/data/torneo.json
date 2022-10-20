@@ -1,0 +1,59 @@
+{
+    "torneos": [
+        {
+            "id": 1,
+            "nombre": "torneo 1",
+            "partidos": [
+                {
+                    "id": 1,
+                    "equipo1": "equipo 1",
+                    "equipo2": "equipo 2",
+                    "fecha": "1 de enero",
+                    "hora": "01:00 pm"
+                },
+                {
+                    "id": 2,
+                    "equipo1": "equipo 1",
+                    "equipo2": "equipo 2",
+                    "fecha": "2 de enero",
+                    "hora": "02:00 pm"
+                },
+                {
+                    "id": 1,
+                    "equipo1": "equipo 1",
+                    "equipo2": "equipo 2",
+                    "fecha": "3 de enero",
+                    "hora": "03:00 pm"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "torneo 2",
+            "partidos": [
+                {
+                    "id": 1,
+                    "equipo1": "equipo 1",
+                    "equipo2": "equipo 2",
+                    "fecha": "1 de enero",
+                    "hora": "01:00 pm"
+                },
+                {
+                    "id": 2,
+                    "equipo1": "equipo 1",
+                    "equipo2": "equipo 2",
+                    "fecha": "2 de enero",
+                    "hora": "02:00 pm"
+                },
+                {
+                    "id": 1,
+                    "equipo1": "equipo 1",
+                    "equipo2": "equipo 2",
+                    "fecha": "3 de enero",
+                    "hora": "03:00 pm"
+                }
+            ]
+        }
+
+    ]
+}

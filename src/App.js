@@ -14,7 +14,13 @@ import MisTorneos from "./Components/Torneos/MisTorneos.js";
 import TodosTorneos from "./Components/Torneos/TodosTorneos.js";
 import NotFoundPage from "./pages/NotFound.js";
 
+//imports servoces
+import service_torneos from "./data/torneo.json"
+import service_torneosm from "./data/torneosm.json"
+
 function App() {
+  //console.log(service_torneos)
+
   return (
     <BrowserRouter>
       <NavBar/>
@@ -22,8 +28,8 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/reserva" element={<Reserva/>}/>
         <Route path="/torneos/*" element={<Torneos/>}>
-          <Route path="todos" element={<TodosTorneos/>}/>
-          <Route path="mis-torneos" element={<MisTorneos/>}/>
+          <Route path="todos" element={<TodosTorneos torneo={service_torneos}/>}/>
+          <Route path="mis-torneos" element={<TodosTorneos torneo={service_torneosm}/>}/>
         </Route>
         <Route path="*" element={<NotFoundPage/>} />
       </Routes>

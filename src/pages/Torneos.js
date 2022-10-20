@@ -14,9 +14,6 @@ export default function Torneos() {
                         <li className="nav-item">
                             <Link className="nav-link" to="mis-torneos">Mis torneos</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Disabled</a>
-                        </li>
                     </ul>
                 </div>
                 <div className="card-body">
