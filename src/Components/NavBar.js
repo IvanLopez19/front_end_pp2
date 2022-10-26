@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
+import logo from "../../src/img/logo.png"
 
 
 function NavBar() {
@@ -8,7 +9,7 @@ function NavBar() {
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/">ConectGol</NavLink>
+                     <NavLink className="navbar-brand" to="/"> <a href="#"> <img src={logo} style={{width:50, height:45}} /></a></NavLink> 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
