@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Calendario from '../Components/Calendario/Calendario.js';
 import Carrusel from '../Components/Carrusel/Carrusel.js';
 import Horarios from '../Components/Horarios/Horarios.js';
-import Descripcion from '../Components/Descripcion/Descripcion.js';
+import {Descripcion} from '../Components/Descripcion/Descripcion.js';
 import { Canchas } from "../data/canchasdata.js";
 
 function Reserva() {
@@ -13,7 +13,7 @@ function Reserva() {
   return (
     <div className="container-fluid">
       <Carrusel/>
-        <Descripcion cancha={reservas.Negocio} descripcion={reservas.Direccion}/>
+        <Descripcion cancha={reservas.Negocio} descripcion={reservas.Direccion} precio={reservas.Precio}/>
       <Calendario/>
       <Horarios/>
     </div>

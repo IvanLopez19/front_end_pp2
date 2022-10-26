@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css";
 import "./Horarios.css";
 
@@ -23,7 +24,9 @@ function Horarios(props){
         </ul>
         <div className='contenedor'>
           <span className="badge rounded-pill text-bg-light monto">{'$'+checkedhours*10}</span>
-          <button type="button" className="btn btn-primary btn-lg boton">Large button</button>
+          <Link to={`/reserva/pagar`}>
+            <button type="button" className="btn btn-primary btn-lg boton">Reservar</button>
+          </Link>
         </div>
       </div>
     )

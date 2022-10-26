@@ -30,7 +30,7 @@ function BuscarCancha(){
                 <button className="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 <ul>
-                {newcanchas.map((cancha)=>(<Cancha key={cancha.slug} slug={cancha.slug} nombre={cancha.Negocio} direccion={cancha.Direccion}/>))}
+                {newcanchas.map((cancha)=>(<Cancha key={cancha.slug} slug={cancha.slug} nombre={cancha.Negocio} direccion={cancha.Direccion} precio={cancha.Precio}/>))}
                 </ul>
             </div>
 
@@ -38,17 +38,18 @@ function BuscarCancha(){
     )
 }
 
-function Cancha({slug, nombre, direccion}){
+function Cancha({slug, nombre, direccion, precio}){
     return(<li>
             <Link to={`/reserva/${slug}`} className="list-group-item list-group-item-action d-flex gap-3 py-3" >
           
-                <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"/>
+                <img src="/static/media/logo.5688c03dbd4cddfb43ab.png" alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"/>
                 <div className="d-flex gap-2 w-100 justify-content-between">
                     <div>
                         <h6 className="mb-0">{nombre}</h6>
                         <p className="mb-0 opacity-75">{direccion}</p>
                     </div>
                 </div>
+                <div>${precio}</div>
             </Link>
             </li>
     )
