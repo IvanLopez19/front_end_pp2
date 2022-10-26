@@ -1,5 +1,5 @@
 .contprinhor{
-    background-color: #f28465;
+    background-color: #1D96D6;
     border-radius: 25px 25px 0 0;
     padding: 25px;
 }
@@ -9,9 +9,20 @@
 }
 
 .boton{
-    background-color: #2a76af;
+    background-color: #599130;
     margin: 50px 0 50px 0;
     color: white;
     border: 0;
     font-weight: 500;
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.monto{
+    font-size: 15px;
+    width: 50px;
 }
