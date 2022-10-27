@@ -26,18 +26,19 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavBar/>
       <Routes>
-        <Route index path="/" element={<HomePage/>}/>
-        <Route path="/reserva" element={<BuscarCancha/>}/>
-        <Route path="/reserva/:slug" element={<Reserva/>}/>
-        <Route path="/reserva/pagar" element={<Pagar/>}/>
-        <Route path="/reserva/pagar/exitoso" element={<ReservaResultado/>}/>
-        <Route path="/torneos/*" element={<Torneos/>}>
-          <Route path="todos" element={<TodosTorneos torneo={service_torneos}/>}/>
-          <Route path="mis-torneos" element={<TodosTorneos torneo={service_torneosm}/>}/>
+        <Route path="/" element={<NavBar/>}>
+          <Route index element={<HomePage/>}/>
+          <Route path="/reserva" element={<BuscarCancha/>}/>
+          <Route path="/reserva/:slug" element={<Reserva/>}/>
+          <Route path="/reserva/pagar" element={<Pagar/>}/>
+          <Route path="/reserva/pagar/exitoso" element={<ReservaResultado/>}/>
+          <Route path="/torneos/*" element={<Torneos/>}>
+            <Route path="todos" element={<TodosTorneos torneo={service_torneos}/>}/>
+            <Route path="mis-torneos" element={<TodosTorneos torneo={service_torneosm}/>}/>
+          </Route>
+          <Route path="*" element={<NotFoundPage/>} />
         </Route>
-        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>
   );
