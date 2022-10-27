@@ -1,45 +1,43 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css";
 import "./Horarios.css";
 
-function Horarios(){
+const Horas = [{'tiempo':'12:00-1:00', 'checked':false}, {'tiempo':'1:00-2:00', 'checked': false} , {'tiempo':'3:00-4:00', 'checked': false}, {'tiempo':'4:00-5:00','checked': false}];
+
+function Horarios(props){
+  const [horas, setHoras] = React.useState(Horas);
+
+  const checkedhours = horas.filter(hora=>hora.checked).length;
+
+  const checkhour = (tiempo)=>{
+    const horaIndex = horas.findIndex(hora => hora.tiempo === tiempo);
+    const newhoras = [...horas];
+    newhoras[horaIndex].checked = !(newhoras[horaIndex].checked);
+    setHoras(newhoras);
+  };
+
     return(
-        <div className="list-group list-group-radio d-grid gap-2 border-0 w-auto contprinhor">
-  <div className="position-relative card">
-    <input className="form-check-input position-absolute top-50 end-0 me-3 fs-5" type="radio" name="listGroupRadioGrid" id="listGroupRadioGrid1" value="" checked=""/>
-    <label className="list-group-item py-3 pe-5" for="listGroupRadioGrid1">
-      <strong className="fw-semibold">First radio</strong>
-      <span className="d-block small opacity-75">With support text underneath to add more detail</span>
-    </label>
-  </div>
-
-  <div className="position-relative card">
-    <input className="form-check-input position-absolute top-50 end-0 me-3 fs-5" type="radio" name="listGroupRadioGrid" id="listGroupRadioGrid2" value=""/>
-    <label className="list-group-item py-3 pe-5" for="listGroupRadioGrid2">
-      <strong className="fw-semibold">Second radio</strong>
-      <span className="d-block small opacity-75">Some other text goes here</span>
-    </label>
-  </div>
-
-  <div className="position-relative card">
-    <input className="form-check-input position-absolute top-50 end-0 me-3 fs-5" type="radio" name="listGroupRadioGrid" id="listGroupRadioGrid3" value=""/>
-    <label className="list-group-item py-3 pe-5" for="listGroupRadioGrid3">
-      <strong className="fw-semibold">Third radio</strong>
-      <span className="d-block small opacity-75">And we end with another snippet of text</span>
-    </label>
-  </div>
-
-  <div className="position-relative card">
-    <input className="form-check-input position-absolute top-50 end-0 me-3 fs-5" type="radio" name="listGroupRadioGrid" id="listGroupRadioGrid4" value="" disabled=""/>
-    <label className="list-group-item py-3 pe-5" for="listGroupRadioGrid4">
-      <strong className="fw-semibold">Fourth disabled radio</strong>
-      <span className="d-block small opacity-75">This option is disabled</span>
-    </label>
-  </div>
-
-  <button type="button" class="btn btn-primary btn-lg boton">Large button</button>
-</div>
+      <div className="contprinhor">
+        <ul className="list-group">
+          {horas.map( hora=> <Horario key={hora.tiempo} data={hora} checkhour={ () =>checkhour(hora.tiempo) }/>)}
+        </ul>
+        <div className='contenedor'>
+          <span className="badge rounded-pill text-bg-light monto">{'$'+checkedhours*10}</span>
+          <Link to={`/reserva/pagar`}>
+            <button type="button" className="btn btn-primary btn-lg boton">Reservar</button>
+          </Link>
+        </div>
+      </div>
     )
 }
+
+function Horario(props){
+  return(<li className="list-group-item card" >
+  {/* <div className="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" onClick={props.checkhour}>{props.data.tiempo}</div> */}
+  <div className="form-check-label" for="firstCheckbox" onClick={props.checkhour}>{props.data.tiempo}</div>
+</li>)
+}
+
 
 export default Horarios;

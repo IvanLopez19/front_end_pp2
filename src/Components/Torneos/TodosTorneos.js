@@ -2,7 +2,7 @@ import React from 'react'
 //import subcomponentes
 import Partidos from "./Partidos.js";
 
-export default function TodosTorneos({ torneo }) {
+function TodosTorneos({ torneo }) {
     console.log(torneo);
     const torneos_array = torneo.torneos
     return (
@@ -31,3 +31,5 @@ export default function TodosTorneos({ torneo }) {
         </div>
     )
 }
+
+export {TodosTorneos};

@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import './Calendario.css';
-import 'bootstrap/js/dist/dropdown.js';
+//import 'bootstrap/js/dist/dropdown.js';
 
 function Calendario(){
     const [fecha, Setfecha] = React.useState();

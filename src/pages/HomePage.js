@@ -1,9 +1,15 @@
-import React from 'react'
 
-export default function HomePage() {
+import React, { Component } from "react"
+import Banner from "../Components/Banner";
+
+
+class HomePage extends Component {
+  render() {
     return (
-        <div className="container-fluid">
-            Home Page
-        </div>
-    )
+      <Banner></Banner>
+      
+    );
+  }
 }
+
+export {HomePage};

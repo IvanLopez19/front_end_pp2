@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-export default function MisTorneos({name}) {
+function MisTorneos({name}) {
 
     return (
         <div>
@@ -11,3 +11,5 @@ export default function MisTorneos({name}) {
         </div>
     )
 }
+
+export {MisTorneos};

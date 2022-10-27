@@ -1,0 +1,4 @@
+.contenedorprincipal{
+    display: flex;
+    flex-flow: row;
+}

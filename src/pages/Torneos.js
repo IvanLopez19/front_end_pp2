@@ -29,3 +29,5 @@ export default function Torneos() {
         </div>
     )
 }
+
+export {Torneos};

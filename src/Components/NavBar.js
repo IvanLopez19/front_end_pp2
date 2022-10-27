@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
+import logo from "../../src/img/logo.png"
 
 
-export default function NavBar() {
+function NavBar() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/">ConectGol</NavLink>
+                     <NavLink className="navbar-brand" to="/"> <a href="#"> <img src={logo} style={{width:50, height:45}} /></a></NavLink> 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -24,13 +25,16 @@ export default function NavBar() {
                                 <NavLink className="nav-link" to="/torneos">Torneos</NavLink>
                             </li>
                         </ul>
-                        <form className="d-flex" role="search">
+                        <a>Log out</a>
+                        {/* <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                                 <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        </form> */}
                     </div>
                 </div>
             </nav>
         </div>
     )
 }
+
+export {NavBar};
