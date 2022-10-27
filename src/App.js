@@ -5,13 +5,11 @@ import{
   Route
 } from "react-router-dom";
 import React from "react";
-
 //imports pages
 import {NavBar} from "./Components/NavBar.js";
 import {HomePage} from './pages/HomePage.js';
 import {Reserva} from './pages/Reserva.js';
 import {Torneos} from "./pages/Torneos.js";
-import {MisTorneos} from "./Components/Torneos/MisTorneos.js";
 import {TodosTorneos} from "./Components/Torneos/TodosTorneos.js";
 import {NotFoundPage} from "./pages/NotFound.js";
 import { BuscarCancha } from "./pages/BuscarCancha.js";
@@ -30,7 +28,7 @@ function App() {
     <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route index path="/" element={<HomePage/>}/>
         <Route path="/reserva" element={<BuscarCancha/>}/>
         <Route path="/reserva/:slug" element={<Reserva/>}/>
         <Route path="/reserva/pagar" element={<Pagar/>}/>
