@@ -4,8 +4,8 @@ import{
   Routes,
   Route
 } from "react-router-dom";
-
 import React from "react";
+
 //imports pages
 import {NavBar} from "./Components/NavBar.js";
 import {HomePage} from './pages/HomePage.js';

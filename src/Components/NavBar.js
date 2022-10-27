@@ -9,7 +9,7 @@ function NavBar() {
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
                 <div className="container-fluid">
-                     <NavLink className="navbar-brand" to="/"> <a href="#"> <img src={logo} style={{width:50, height:45}} /></a></NavLink> 
+                    <NavLink className="navbar-brand" to="/"> <img src={logo} style={{width:50, height:45}}/> </NavLink> 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -25,7 +25,7 @@ function NavBar() {
                                 <NavLink className="nav-link" to="/torneos">Torneos</NavLink>
                             </li>
                         </ul>
-                        <a>Log out</a>
+                        <button>Log out</button>
                         {/* <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                                 <button className="btn btn-outline-success" type="submit">Search</button>

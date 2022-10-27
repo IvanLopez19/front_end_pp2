@@ -2,26 +2,26 @@
     "torneos": [
         {
             "id": 1,
-            "nombre": "torneo 1",
+            "nombre": "LaLiga",
             "partidos": [
                 {
                     "id": 1,
-                    "equipo1": "equipo 1",
-                    "equipo2": "equipo 2",
+                    "equipo1": "Real Madrid",
+                    "equipo2": "Barcelona",
                     "fecha": "1 de enero",
                     "hora": "01:00 pm"
                 },
                 {
                     "id": 2,
-                    "equipo1": "equipo 1",
-                    "equipo2": "equipo 2",
+                    "equipo1": "Atletico",
+                    "equipo2": "Bilbao",
                     "fecha": "2 de enero",
                     "hora": "02:00 pm"
                 },
                 {
-                    "id": 1,
-                    "equipo1": "equipo 1",
-                    "equipo2": "equipo 2",
+                    "id": 3,
+                    "equipo1": "Betis",
+                    "equipo2": "Sevilla",
                     "fecha": "3 de enero",
                     "hora": "03:00 pm"
                 }
@@ -29,26 +29,26 @@
         },
         {
             "id": 2,
-            "nombre": "torneo 2",
+            "nombre": "Premier League",
             "partidos": [
                 {
                     "id": 1,
-                    "equipo1": "equipo 1",
-                    "equipo2": "equipo 2",
+                    "equipo1": "Manchester City",
+                    "equipo2": "Cheelsea",
                     "fecha": "1 de enero",
                     "hora": "01:00 pm"
                 },
                 {
                     "id": 2,
-                    "equipo1": "equipo 1",
-                    "equipo2": "equipo 2",
+                    "equipo1": "Toteham",
+                    "equipo2": "Liverpool",
                     "fecha": "2 de enero",
                     "hora": "02:00 pm"
                 },
                 {
-                    "id": 1,
-                    "equipo1": "equipo 1",
-                    "equipo2": "equipo 2",
+                    "id": 3,
+                    "equipo1": "Manchester United",
+                    "equipo2": "Aston Villa",
                     "fecha": "3 de enero",
                     "hora": "03:00 pm"
                 }

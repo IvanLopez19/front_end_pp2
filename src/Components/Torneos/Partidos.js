@@ -1,29 +1,31 @@
 import React from 'react'
-
-export default function Partidos() {
+import './partidos.css';
+export default function Partidos({ partidos }) {
+    const array_partidos = partidos;
     return (
-        <ol className="list-group list-group-numbered">
-            <li className="list-group-item d-flex justify-content-between align-items-start">
-                <div className="ms-2 me-auto">
-                    <div className="fw-bold">Subheading</div>
-                    Content for list item
-                </div>
-                <span className="badge bg-primary rounded-pill">14</span>
-            </li>
-            <li className="list-group-item d-flex justify-content-between align-items-start">
-                <div className="ms-2 me-auto">
-                    <div className="fw-bold">Subheading</div>
-                    Content for list item
-                </div>
-                <span className="badge bg-primary rounded-pill">14</span>
-            </li>
-            <li className="list-group-item d-flex justify-content-between align-items-start">
-                <div className="ms-2 me-auto">
-                    <div className="fw-bold">Subheading</div>
-                    Content for list item
-                </div>
-                <span className="badge bg-primary rounded-pill">14</span>
-            </li>
+        <ol className="list-group">
+            {
+                array_partidos.map((partido) => {
+                    return (
+                        <li key={partido.id} className="list-group-item d-flex-column justify-content-center align-items-center">
+                            <div className="container partido d-flex justify-content-center align-items-center">
+                                <div className="equipo ms-5 me-5">
+                                    <div className="fw-bold">{partido.equipo1}</div>
+                                    Content for list item
+                                </div>
+                                <span className="badge bg-primary rounded-pill">vs</span>
+                                <div className="equipo ms-5 me-5">
+                                    <div className="fw-bold">{partido.equipo2}</div>
+                                    Content for list item
+                                </div>
+                            </div>
+                            <div className="mt-1">
+                                {partido.fecha}
+                            </div>
+                        </li>
+                    )
+                })
+            }
         </ol>
     )
 }

@@ -3,8 +3,8 @@ import React from 'react'
 import Partidos from "./Partidos.js";
 
 function TodosTorneos({ torneo }) {
-    console.log(torneo);
-    const torneos_array = torneo.torneos
+    const torneos_array = torneo.torneos;
+    
     return (
         <div className='container'>
             <ul>
@@ -18,7 +18,7 @@ function TodosTorneos({ torneo }) {
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title">{torneo.nombre}</h5>
-                                        <Partidos/>
+                                        <Partidos partidos={torneo.partidos} />
                                     </div>
                                     <div className="card-footer text-muted">
                                         2 days ago

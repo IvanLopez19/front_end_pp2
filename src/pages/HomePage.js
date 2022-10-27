@@ -1,15 +1,9 @@
 
-import React, { Component } from "react"
+import React from "react"
 import Banner from "../Components/Banner";
 
-
-class HomePage extends Component {
-  render() {
-    return (
-      <Banner></Banner>
-      
-    );
-  }
+function HomePage() {
+  return (<Banner/>);
 }
 
 export {HomePage};

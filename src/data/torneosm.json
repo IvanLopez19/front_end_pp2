@@ -17,13 +17,6 @@
                     "equipo2": "equipo 2",
                     "fecha": "2 de enero",
                     "hora": "02:00 pm"
-                },
-                {
-                    "id": 1,
-                    "equipo1": "equipo 1",
-                    "equipo2": "equipo 2",
-                    "fecha": "3 de enero",
-                    "hora": "03:00 pm"
                 }
             ]
         },
@@ -46,7 +39,7 @@
                     "hora": "02:00 pm"
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "equipo1": "equipo 1",
                     "equipo2": "equipo 2",
                     "fecha": "3 de enero",
