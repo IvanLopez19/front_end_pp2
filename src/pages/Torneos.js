@@ -9,7 +9,7 @@ export default function Torneos() {
 
     //navegar()
     return (
-        <div className="container-fluid">
+        <div className="container-fluid col-10">
             Lista de partidos por torneos
             <div className="card text-center">
                 <div className="card-header">

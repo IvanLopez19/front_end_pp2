@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink,  Outlet } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from "../../src/img/logo.png"
 
@@ -33,6 +33,7 @@ function NavBar() {
                     </div>
                 </div>
             </nav>
+            <div><Outlet/></div>
         </div>
     )
 }
