@@ -4,18 +4,23 @@ import Calendario from '../Components/Calendario/Calendario.js';
 import Carrusel from '../Components/Carrusel/Carrusel.js';
 import Horarios from '../Components/Horarios/Horarios.js';
 import {Descripcion} from '../Components/Descripcion/Descripcion.js';
-import { Canchas } from "../data/canchasdata.js";
+import {useCanchas} from '../Components/useCanchas.js';
 
 function Reserva() {
   const {slug} = useParams();
-  const reservas = Canchas.find(cancha=>cancha.slug == slug);
+  const {functions, variables} = useCanchas();
+  //console.log("hola");
+  //console.log(variables);
+  //console.log(variables.newcanchas);
+  console.log(slug);
+  const cancha = functions.CanchaEspecifica(slug);
   // TODO: Validar que reservas tenga algo
   return (
     <div className="container-fluid">
       <Carrusel/>
-        <Descripcion cancha={reservas.Negocio} descripcion={reservas.Direccion} precio={reservas.Precio}/>
-      <Calendario/>
-      <Horarios/>
+        <Descripcion cancha={cancha.Negocio.name} descripcion={cancha.direccion} precio={cancha.precio}/>
+        <Calendario/>
+        <Horarios/>
     </div>
   );
 }

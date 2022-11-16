@@ -1,38 +1,47 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
 import { Link, Router } from "react-router-dom";
-import { Canchas } from "../data/canchasdata";
+import {useCanchas} from "../Components/useCanchas.js"
+//import { Canchas } from "../data/canchasdata";
 
 function BuscarCancha(){
-    const [busqueda, setBusqueda] = React.useState('');
-    const [canchas, setCanchas] = React.useState(Canchas);
+    const {functions, variables} = useCanchas();
 
-    const onSearch = (event)=>{
-        console.log(event.target.value);
-        setBusqueda(event.target.value);
-    }
+    useEffect(()=>{
+        setTimeout( ()=>{
+            axios({
+                method:'get',
+                url:'http://localhost:8000/api/cancha/getAll',
+                timeout: 9000,
+            })
+            .then(res => {
+                functions.setCanchas (res.data);
+                //setLoading(false);
+            } )
+            .catch(e => console.log(e))},
+            "3000")
+    },[])
 
-    let newcanchas = [];
+    console.log(variables.newcanchas);
     
-      if(busqueda.length == 0){
-        newcanchas = canchas;
-      }
-      else{
-        newcanchas = canchas.filter(cancha=>cancha.Negocio.toLowerCase().includes(busqueda.toLowerCase()));
-      }
-    /*const cambiarbusqueda = (a)=>{
-        setBusqueda()
-    }*/
     return(
         <div>
-            <div className="container-fluid">
-                <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={busqueda} onChange={onSearch}/>
-                <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <ul>
-                {newcanchas.map((cancha)=>(<Cancha key={cancha.slug} slug={cancha.slug} nombre={cancha.Negocio} direccion={cancha.Direccion} precio={cancha.Precio}/>))}
-                </ul>
-            </div>
+            {variables.newcanchas ? (
+                <div className="container-fluid">
+                    <form className="d-flex" role="search">
+                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={useCanchas.busqueda} onChange={useCanchas.onSearch}/>
+                    <button className="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <ul>
+                    {variables.newcanchas.map((cancha)=>(<Cancha key={cancha.id} slug={cancha.id} nombre={cancha.Negocio.name} direccion={cancha.direccion} precio={cancha.precio}/>))}
+                    </ul>
+                </div>)
+            :(<div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>)
+            }
 
         </div>
     )
