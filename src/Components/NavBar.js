@@ -25,7 +25,24 @@ function NavBar() {
                                 <NavLink className="nav-link" to="/torneos">Torneos</NavLink>
                             </li>
                         </ul>
-                        <button>Log out</button>
+                        {/**/}
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-white">
+                                    <li><NavLink class="dropdown-item" to="/">Perfil</NavLink></li>
+                                    <li><NavLink class="dropdown-item" to="/user/reserva">Reservas</NavLink></li>
+                                    <li><NavLink class="dropdown-item" to="/user/equipo">Equipos</NavLink></li>
+                                    <li><NavLink class="dropdown-item" to="/user/torneos">Torneos</NavLink></li>
+                                    <li><NavLink class="dropdown-item" to="/">Log Out</NavLink></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        {/**/}
                         {/* <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                                 <button className="btn btn-outline-success" type="submit">Search</button>

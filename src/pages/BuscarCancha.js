@@ -1,13 +1,29 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { Link, Router } from "react-router-dom";
-import {useCanchas} from "../Components/useCanchas.js"
-//import { Canchas } from "../data/canchasdata";
+//import {useCanchas} from "../Components/useCanchas.js"
+import { Canchas } from "../data/canchasdata";
 
 function BuscarCancha(){
-    const {functions, variables} = useCanchas();
+    const [busqueda, setBusqueda] = React.useState('');
+    const [canchas, setCanchas] = React.useState(Canchas);
 
-    useEffect(()=>{
+    const onSearch = (event)=>{
+        console.log(event.target.value);
+        setBusqueda(event.target.value);
+    }
+
+    let newcanchas = [];
+    
+      if(busqueda.length == 0){
+        newcanchas = canchas;
+      }
+      else{
+        newcanchas = canchas.filter(cancha=>cancha.Negocio.toLowerCase().includes(busqueda.toLowerCase()));
+      }
+    //const {functions, variables} = useCanchas();
+
+    /*useEffect(()=>{
         setTimeout( ()=>{
             axios({
                 method:'get',
@@ -20,20 +36,21 @@ function BuscarCancha(){
             } )
             .catch(e => console.log(e))},
             "3000")
-    },[])
+    },[])*/
 
-    console.log(variables.newcanchas);
+    //console.log(variables.newcanchas);
     
     return(
         <div>
-            {variables.newcanchas ? (
+            {newcanchas ? (
                 <div className="container-fluid">
                     <form className="d-flex" role="search">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={useCanchas.busqueda} onChange={useCanchas.onSearch}/>
+                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={busqueda} onChange={onSearch}/>
                     <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     <ul>
-                    {variables.newcanchas.map((cancha)=>(<Cancha key={cancha.id} slug={cancha.id} nombre={cancha.Negocio.name} direccion={cancha.direccion} precio={cancha.precio}/>))}
+                    {newcanchas.map((cancha)=>(<Cancha key={cancha.slug} slug={cancha.slug} nombre={cancha.Negocio} direccion={cancha.Direccion} precio={cancha.Precio} suelo={cancha.Suelo}/>))}
+                    {/*variables.newcanchas.map((cancha)=>(<Cancha key={cancha.id} slug={cancha.id} nombre={cancha.Negocio.name} direccion={cancha.direccion} precio={cancha.precio}/>))*/}
                     </ul>
                 </div>)
             :(<div class="d-flex justify-content-center">
@@ -47,7 +64,7 @@ function BuscarCancha(){
     )
 }
 
-function Cancha({slug, nombre, direccion, precio}){
+function Cancha({slug, nombre, direccion, precio, suelo}){
     return(<li>
             <Link to={`/reserva/${slug}`} className="list-group-item list-group-item-action d-flex gap-3 py-3" >
           
@@ -59,6 +76,7 @@ function Cancha({slug, nombre, direccion, precio}){
                     </div>
                 </div>
                 <div>${precio}</div>
+                <div>{suelo}</div>
             </Link>
             </li>
     )

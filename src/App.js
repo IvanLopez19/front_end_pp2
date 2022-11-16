@@ -15,6 +15,7 @@ import {NotFoundPage} from "./pages/NotFound.js";
 import { BuscarCancha } from "./pages/BuscarCancha.js";
 import {ReservaResultado} from "./pages/ReservaResultado.js";
 import { Pagar } from "./pages/Pagar.js";
+import { ReservaUsuario } from "./pages/ReservaUsuario.js";
 
 
 //imports servoces
@@ -37,6 +38,7 @@ function App() {
               <Route path="todos" element={<TodosTorneos torneo={service_torneos}/>}/>
               <Route path="mis-torneos" element={<TodosTorneos torneo={service_torneosm}/>}/>
             </Route>
+            <Route path="/user/reserva" element={<ReservaUsuario/>}></Route>
             <Route path="*" element={<NotFoundPage/>} />
           </Route>
         </Routes>
