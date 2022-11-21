@@ -12,6 +12,7 @@ function ReservaUsuario(){
     }*/
     return(
         <div>
+            <h1>Reservaciones usuario</h1>
             <ul>
                 {Reservas.map(r=>(<Reservacard fecha={r.Fecha} cancha={r.Cancha} horas={r.Horas}/>))}
             </ul>

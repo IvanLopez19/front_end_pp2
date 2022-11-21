@@ -19,7 +19,7 @@ function NavBar() {
                                 <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/reserva">Reservar</NavLink>
+                                <NavLink className="nav-link" to="/reserva">Canchas</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/torneos">Torneos</NavLink>
