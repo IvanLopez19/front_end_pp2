@@ -37,7 +37,8 @@ function App() {
             <Route path="/reserva/pagar/exitoso" element={<ReservaResultado/>}/>
             <Route path="/torneos/*" element={<Torneos/>}>
               <Route path="todos" element={<TodosTorneos torneo={service_torneos}/>}/>
-              <Route path="mis-torneos" element={<TodosTorneos torneo={service_torneosm}/>}/>
+              <Route path="mis-torneos" element={<TodosTorneos torneo="torneos"/>}/>
+              {/*<Route path="mis-torneos" element={<TodosTorneos torneo={service_torneosm}/>}/>*/}
             </Route>
             <Route path="/user/reserva" element={<ReservaUsuario/>}></Route>
             <Route path="/user/torneos" element={<TorneoUsuario/>}></Route>

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './index.css'
 //import subcomponentes
 import Partidos from "./Partidos.js";
 
 function TodosTorneos({ torneo }) {
-    const torneos_array = torneo.torneos;
+    //const torneos_array = torneo.torneos;
+    //useState
     
     return (
         <div className='container'>

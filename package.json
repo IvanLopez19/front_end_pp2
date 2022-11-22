@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "json-server": "^0.17.1",
     "web-vitals": "^3.0.4"
   }
 }
