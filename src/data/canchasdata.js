@@ -1,8 +1,16 @@
 const Canchas = [
-    {'slug': 'cancha1', 'Negocio':'El cafetalon', 'Direccion':'colonia altos de miramonte', 'Precio':10, 'Suelo': 'grama'}, 
-    {'slug': 'cancha2', 'Negocio':'roconda', 'Direccion':'pasaje los geranios', 'Precio':5, 'Suelo': 'cemento'},
-    {'slug': 'cancha3', 'Negocio':'paneava', 'Direccion':'boulevard constitucion', 'Precio':15, 'Suelo': 'grama'},
-    {'slug': 'cancha4', 'Negocio':'El cafetalon', 'Direccion':'peru', 'Precio':12, 'Suelo': 'cemento'}];
+    {'slug': 'cancha1', 'Negocio':'El cafetalon', 'Direccion':'cancha 1 ', 'Precio':10, 'Suelo': 'grama'}, 
+    {'slug': 'cancha2', 'Negocio':'El cafetalon', 'Direccion':'cancha 2', 'Precio':10, 'Suelo': 'grama'},
+    {'slug': 'cancha3', 'Negocio':'El cafetalon', 'Direccion':'cancha 3', 'Precio':15, 'Suelo': 'grama'},
+    {'slug': 'cancha4', 'Negocio':'El cafetalon', 'Direccion':'cancha 4', 'Precio':12, 'Suelo': 'grama'},
+    {'slug': 'cancha5', 'Negocio':'El cafetalon', 'Direccion':'cancha 5', 'Precio':12, 'Suelo': 'cemento'},
+    {'slug': 'cancha6', 'Negocio':'El cafetalon', 'Direccion':'cancha 6', 'Precio':12, 'Suelo': 'cemento'},
+    {'slug': 'cancha7', 'Negocio':'El cafetalon', 'Direccion':'cancha 7', 'Precio':12, 'Suelo': 'cemento'},
+    {'slug': 'cancha8', 'Negocio':'El cafetalon', 'Direccion':'cancha 8', 'Precio':12, 'Suelo': 'cemento'},
+    {'slug': 'cancha9', 'Negocio':'El cafetalon', 'Direccion':'cancha papi futbol 1', 'Precio':18, 'Suelo': 'cemento'},
+    {'slug': 'cancha10','Negocio':'El cafetalon', 'Direccion':'cancha papi futbol 2', 'Precio':18, 'Suelo': 'cemento'},
+    {'slug': 'cancha11','Negocio':'El cafetalon', 'Direccion':'cancha futbol rapido', 'Precio':20, 'Suelo': 'cemento'}
+];
 
 const Reservas = []
 

@@ -30,14 +30,15 @@ function NavBar() {
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                                    Usuario
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-white">
-                                    <li><NavLink class="dropdown-item" to="/">Perfil</NavLink></li>
-                                    <li><NavLink class="dropdown-item" to="/user/reserva">Reservas</NavLink></li>
-                                    <li><NavLink class="dropdown-item" to="/user/equipo">Equipos</NavLink></li>
-                                    <li><NavLink class="dropdown-item" to="/user/torneos">Torneos</NavLink></li>
-                                    <li><NavLink class="dropdown-item" to="/">Log Out</NavLink></li>
+                                    <li><a class="dropdown-item" href="/">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="/user/reserva">Reservas</a></li>
+                                    <li><a class="dropdown-item" href="/user/equipo">Equipos</a></li>
+                                    <li><a class="dropdown-item" href="/user/torneos">Torneos</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item" href="/">Log Out</a></li>
                                 </ul>
                                 </li>
                             </ul>
