@@ -1,4 +1,11 @@
 h1{
     font-family: 'Fredoka One', cursive;
-    color:black;
+    color:rgb(69, 202, 57);
+}
+p{
+    color: blue;
+}
+
+h4{
+    color: green;
 }

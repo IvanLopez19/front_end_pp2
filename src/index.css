@@ -33,6 +33,7 @@ h1 {
 } */
 
 
+
 /*footer*/
 .footer {
   padding: 2rem 0;
@@ -78,6 +79,7 @@ h1 {
   padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 div {

@@ -1,23 +1,37 @@
 import React from "react";
+import { Reservas, Horas } from "../data/canchasdata.js";
 
-const reservas = [1,2,3];
+//const reservas = [1,2,3];
 function ReservaUsuario(){
+    console.log('resultado');
+    console.log(Reservas[0])
+
+    /*const handleCancelar = ()=>{
+        const mesindex = Horas.findIndex((mes)=>(mes.mes == props.fecha.mes));
+        //const horaIndex = Horas[mesindex].dias[props.fecha.dia -1].horario.forEach((element)=>{Horas[mesindex].dias[diaindex].horario[element].disponible = false});
+    }*/
     return(
         <div>
-            {reservas.map(r=>(<Reservacard/>))}
+            <h1>Reservaciones usuario</h1>
+            <ul>
+                {Reservas.map(r=>(<Reservacard fecha={r.Fecha} cancha={r.Cancha} horas={r.Horas}/>))}
+            </ul>
         </div>
     )
 }
 
-function Reservacard(){
+function Reservacard(props){
     return(
-        <div class="card">
+        <li class="card">
             <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Dia:{props.fecha.dia} Mes:{props.fecha.mes}</h5>
+                <p>Negocio: {props.cancha.Negocio}</p>
+                <p>Direccion: {props.cancha.Direccion}</p>
+                <p>Monto total: {props.cancha.Precio}</p>
+                <p>Horas: {props.horas}</p>
+                <button class="btn btn-primary">Cancelar reservacion</button>
             </div>
-        </div>
+        </li>
     )
 }
 
