@@ -11,6 +11,7 @@ import {HomePage} from './pages/HomePage.js';
 import {Reserva} from './pages/Reserva.js';
 import {Torneos} from "./pages/Torneos.js";
 import {TodosTorneos} from "./Components/Torneos/TodosTorneos.js";
+import {MisTorneos} from "./Components/Torneos/MisTorneos.js"
 import {NotFoundPage} from "./pages/NotFound.js";
 import { BuscarCancha } from "./pages/BuscarCancha.js";
 import {ReservaResultado} from "./pages/ReservaResultado.js";
@@ -21,7 +22,7 @@ import {TorneoUsuario} from "./pages/TorneoUsuario.js"
 
 //imports servoces
 import service_torneos from "./data/torneo.json"
-import service_torneosm from "./data/torneosm.json"
+//import service_torneosm from "./data/torneosm.json"
 
 function App() {
   //console.log(service_torneos)
@@ -37,7 +38,7 @@ function App() {
             <Route path="/reserva/pagar/exitoso" element={<ReservaResultado/>}/>
             <Route path="/torneos/*" element={<Torneos/>}>
               <Route path="todos" element={<TodosTorneos torneo={service_torneos}/>}/>
-              <Route path="mis-torneos" element={<TodosTorneos torneo="torneos"/>}/>
+              <Route path="mis-torneos" element={<MisTorneos torneo="torneos"/>}/>
               {/*<Route path="mis-torneos" element={<TodosTorneos torneo={service_torneosm}/>}/>*/}
             </Route>
             <Route path="/user/reserva" element={<ReservaUsuario/>}></Route>

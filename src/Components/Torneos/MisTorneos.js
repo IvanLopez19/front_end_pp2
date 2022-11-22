@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios';
 import './index.css'
 //import subcomponentes
 import Partidos from "./Partidos.js";
 
-function TodosTorneos({ torneo }) {
-   const torneos = torneo.torneos
+function MisTorneos({ torneo }) {
+    const [torneos, setTorneos] = useState([])
+    
+    useEffect(() => {
+        console.log("Effect")
+        try {
+            axios.get(`http://localhost:3001/${torneo}`).then(
+                response => {
+                    console.log(response)
+                    setTorneos(response.data)
+                }
+            )
+        } catch (e) {
+            console.log(e)
+        } finally {
+            console.log("arreglo de torneos: ", torneos);
+        }
+    }, [])
+
     return (
         <div className='container'>
             <ul>
@@ -32,4 +50,4 @@ function TodosTorneos({ torneo }) {
     )
 }
 
-export { TodosTorneos };
+export { MisTorneos };

@@ -26,19 +26,19 @@ function NavBar() {
                             </li>
                         </ul>
                         {/**/}
-                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div className="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul className="navbar-nav">
+                                <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Usuario
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-white">
-                                    <li><a class="dropdown-item" href="/">Perfil</a></li>
-                                    <li><a class="dropdown-item" href="/user/reserva">Reservas</a></li>
-                                    <li><a class="dropdown-item" href="/user/equipo">Equipos</a></li>
-                                    <li><a class="dropdown-item" href="/user/torneos">Torneos</a></li>
-                                    <div class="dropdown-divider"></div>
-                                    <li><a class="dropdown-item" href="/">Log Out</a></li>
+                                <ul className="dropdown-menu dropdown-menu-white">
+                                    <li><a className="dropdown-item" href="/">Perfil</a></li>
+                                    <li><a className="dropdown-item" href="/user/reserva">Reservas</a></li>
+                                    <li><a className="dropdown-item" href="/user/equipo">Equipos</a></li>
+                                    <li><a className="dropdown-item" href="/user/torneos">Torneos</a></li>
+                                    <div className="dropdown-divider"></div>
+                                    <li><a className="dropdown-item" href="/">Log Out</a></li>
                                 </ul>
                                 </li>
                             </ul>
