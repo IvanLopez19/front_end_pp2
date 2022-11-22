@@ -53,11 +53,7 @@ function BuscarCancha(){
                         <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h2 class="display-8">Canchas cafetalon</h2>
-            <h4 >Elige tu cancha que prefieras </h4>
-            <img src="https://cdn.pacer.cc/route/screenshot/d42tb_20200225_0.png" alt="mapa" object-fit="center" width='500px' height="300px"  ></img>
-        </div>
+        
     </div>
                     <ul>
                         {newcanchas.map((cancha) => (<Cancha key={cancha.slug} slug={cancha.slug} nombre={cancha.Negocio} direccion={cancha.Direccion} precio={cancha.Precio} suelo={cancha.Suelo} />))}
