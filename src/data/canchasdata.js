@@ -1,13 +1,13 @@
 const Canchas = [
     {'slug': 'cancha1', 'Negocio':'El cafetalon', 'Direccion':'cancha 1 ', 'Precio':10, 'Suelo': 'grama'}, 
     {'slug': 'cancha2', 'Negocio':'El cafetalon', 'Direccion':'cancha 2', 'Precio':10, 'Suelo': 'grama'},
-    {'slug': 'cancha 2','Negocio':'El cafetalon', 'Direccion':'cancha papi futbol 1', 'Precio':18, 'Suelo': 'cemento'},
-    {'slug': 'cancha 1','Negocio':'El cafetalon', 'Direccion':'cancha papi futbol 2', 'Precio':20, 'Suelo': 'grama'},
-    {'slug': 'cancha 1', 'Negocio':'COOPEFA Sport', 'Direccion':'Col. “General Manuel José Arce”, Calle “Douglas Vladimir Varela” y Avenida “Caballería”, San Salvador,', 'Precio':15, 'Suelo': 'sintética'},
-    {'slug': 'cancha 2', 'Negocio':'COOPEFA Sport', 'Direccion':'Col. “General Manuel José Arce”, Calle “Douglas Vladimir Varela” y Avenida “Caballería”, San Salvador,', 'Precio':18, 'Suelo': 'grama'},
-    {'slug': 'cancha 1', 'Negocio':'FUTECA', 'Direccion':'Blvd Orden De Malta Sur Urb Sta Elena Antgo Cusc, San Salvador,', 'Precio':20, 'Suelo': 'grama'},
-    {'slug': 'cancha 1', 'Negocio':'GAMBETA Los Próceres', 'Direccion':'Col. Lomas de Sn. Francisco, Calle #1, 200mts arriba de Gevesa. San Salvador, San Salvador', 'Precio':15, 'Suelo': 'sintética'},
-    {'slug': 'cancha 1', 'Negocio':'GAMBETA Siemens', 'Direccion':'Calle Siemens Urbanización Industrial Santa Elena, Lote No.46 y 47, Antiguo Cuscatlán, La Libertad', 'Precio':18, 'Suelo': 'sintética'},
+    {'slug': 'cancha2','Negocio':'El cafetalon', 'Direccion':'cancha papi futbol 1', 'Precio':18, 'Suelo': 'cemento'},
+    {'slug': 'cancha1','Negocio':'El cafetalon', 'Direccion':'cancha papi futbol 2', 'Precio':20, 'Suelo': 'grama'},
+    {'slug': 'cancha1', 'Negocio':'COOPEFA Sport', 'Direccion':'Col. “General Manuel José Arce”, Calle “Douglas Vladimir Varela” y Avenida “Caballería”, San Salvador,', 'Precio':15, 'Suelo': 'sintética'},
+    {'slug': 'cancha2', 'Negocio':'COOPEFA Sport', 'Direccion':'Col. “General Manuel José Arce”, Calle “Douglas Vladimir Varela” y Avenida “Caballería”, San Salvador,', 'Precio':18, 'Suelo': 'grama'},
+    {'slug': 'cancha1', 'Negocio':'FUTECA', 'Direccion':'Blvd Orden De Malta Sur Urb Sta Elena Antgo Cusc, San Salvador,', 'Precio':20, 'Suelo': 'grama'},
+    {'slug': 'cancha1', 'Negocio':'GAMBETA Los Próceres', 'Direccion':'Col. Lomas de Sn. Francisco, Calle #1, 200mts arriba de Gevesa. San Salvador, San Salvador', 'Precio':15, 'Suelo': 'sintética'},
+    {'slug': 'cancha1', 'Negocio':'GAMBETA Siemens', 'Direccion':'Calle Siemens Urbanización Industrial Santa Elena, Lote No.46 y 47, Antiguo Cuscatlán, La Libertad', 'Precio':18, 'Suelo': 'sintética'},
 
     
 ];
