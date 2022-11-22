@@ -7,7 +7,6 @@ function Pagar(){
     console.log(Location);
     
     const sendHoras = (Location)=>{
-
         const mesindex = Horas.findIndex((hora)=>(hora.mes == Location.state.Fecha.mes));
         const diaindex = Horas[mesindex].dias.findIndex((dia)=>(dia.dia == Location.state.Fecha.dia));
         let horarioindex = [];
