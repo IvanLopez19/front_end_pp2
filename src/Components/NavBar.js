@@ -33,7 +33,7 @@ function NavBar() {
                                     Usuario
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-white">
-                                    <li><a className="dropdown-item" href="/">Perfil</a></li>
+                                    <li><a className="dropdown-item" href="/user/perfil">Perfil</a></li>
                                     <li><a className="dropdown-item" href="/user/reserva">Reservas</a></li>
                                     <li><a className="dropdown-item" href="/user/equipo">Equipos</a></li>
                                     <li><a className="dropdown-item" href="/user/torneos">Torneos</a></li>
