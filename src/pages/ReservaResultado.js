@@ -9,7 +9,7 @@ function ReservaResultado(){
     //console.log(resultado);
     return(
         <div>
-            <p>Hola</p>
+            <p>Reserva Exitosa</p>
         </div>
     )
 }
