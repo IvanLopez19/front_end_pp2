@@ -18,11 +18,13 @@ import {ReservaResultado} from "./pages/ReservaResultado.js";
 import { Pagar } from "./pages/Pagar.js";
 import { ReservaUsuario } from "./pages/ReservaUsuario.js";
 import {TorneoUsuario} from "./pages/TorneoUsuario.js"
+import {PerfilUser} from "./pages/PerfilUser.js";
 
 
 //imports servoces
 import service_torneos from "./data/torneo.json"
 //import service_torneosm from "./data/torneosm.json"
+import service_perfil from "./data/perfilData.json"
 
 function App() {
   //console.log(service_torneos)
@@ -43,6 +45,8 @@ function App() {
             </Route>
             <Route path="/user/reserva" element={<ReservaUsuario/>}></Route>
             <Route path="/user/torneos" element={<TorneoUsuario/>}></Route>
+
+            <Route path="/user/perfil" element={<PerfilUser Perf={service_perfil} />}></Route>
 
             <Route path="*" element={<NotFoundPage/>} />
           </Route>
