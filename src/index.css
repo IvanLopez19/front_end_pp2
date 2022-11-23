@@ -76,7 +76,6 @@ h1 {
 .container {
   width: 100%;
   padding-right: 25px;
-  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -116,9 +115,9 @@ svg {
 }
 
 .custom-pt-1 {
-  padding-top: 13rem !important;
+  padding-top: 14rem !important;
 }
 
 .custom-pb-2 {
-  padding-bottom: 16rem !important;
+  padding-bottom: 18rem !important;
 }

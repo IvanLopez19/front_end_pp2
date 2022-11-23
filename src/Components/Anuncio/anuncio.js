@@ -30,14 +30,14 @@ function anuncios() {
     fontSize: '2em',
     fontWeight: 'bold',
   }
-  const slideNumberStyle = {
+  /* const slideNumberStyle = {
     fontSize: '20px',
     fontWeight: 'bold',
-  }
+  } */
   return (
     <div className="App">
       <div style={{ textAlign: "center" }}>
-        <h2>React Carousel Minimal</h2>
+        <h2></h2>
         <p>PROMOCIONES</p>
         <div style={{
           padding: "0 20px"

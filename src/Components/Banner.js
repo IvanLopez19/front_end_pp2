@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import "../index.css"
 
 
 export default function Banner() {
@@ -19,7 +20,7 @@ export default function Banner() {
         <div className="row justify-content-center text-center">
           <div className="col-10 col-lg-10 col-xl-8">
             {/* Heading */}
-            <h1 className="display-2 font-weight-bold">
+            <h1 className="display-2 font-weight-bold" >
               CONECT GOL
             </h1>
             {/* Text */}

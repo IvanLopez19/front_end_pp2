@@ -4,7 +4,7 @@ import Banner from "../Components/Banner";
 import Anuncio from "../Components/Anuncio/anuncio";
 
 function HomePage() {
-  return (<><Banner /><Anuncio /></>
+  return ( <><Banner /><Anuncio /></>
   
   )
 }
