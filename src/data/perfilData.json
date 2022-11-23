@@ -1,12 +1,12 @@
-{
-    "Perf": [
-        {
-            "id": 1,
-            "nombre": "Alejandra Martinez", 
-            "edad": 24, 
-            "correo": "aleja.m98@gmail.com"
-        }
-    ]
-    
-}
+[
+    {
+        "id": 1,
+        "nombre": "Alejandra Martinez", 
+        "edad": 24, 
+        "correo": "aleja.m98@gmail.com",
+        "telefono": "70073223",
+        "direccion" : "Colonia las Moras, Lourdes, Colon, La libertad"
+    }
+]
+
 
