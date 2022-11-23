@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink,  Outlet } from "react-router-dom";
+import { NavLink,  Outlet, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from "../../src/img/logo.png"
 import '../index.css'
@@ -34,12 +34,12 @@ function NavBar() {
                                     Usuario
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-white">
-                                    <li><a className="dropdown-item" href="/user/perfil">Perfil</a></li>
-                                    <li><a className="dropdown-item" href="/user/reserva">Reservas</a></li>
-                                    <li><a className="dropdown-item" href="/user/equipo">Equipos</a></li>
-                                    <li><a className="dropdown-item" href="/user/torneos">Torneos</a></li>
+                                    <li><Link className="dropdown-item" to="/user/perfil">Perfil</Link></li>
+                                    <li><Link className="dropdown-item" to="/user/reserva">Reservas</Link></li>
+                                    <li><Link className="dropdown-item" to="/user/equipo">Equipos</Link></li>
+                                    <li><Link className="dropdown-item" to="/user/torneos">Torneos</Link></li>
                                     <div className="dropdown-divider"></div>
-                                    <li><a className="dropdown-item" href="/">Log Out</a></li>
+                                    <li><Link className="dropdown-item" to="/">Log Out</Link></li>
                                 </ul>
                                 </li>
                             </ul>
