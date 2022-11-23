@@ -9,3 +9,14 @@ p{
 h4{
     color: green;
 }
+
+.App p {
+    color: rgb(163, 82, 35);
+    font-size: 30px;
+    font-family:'Fredoka One', cursive;
+    text-decoration:solid
+}
+
+.display-2 h1{
+    color: yellow;
+}

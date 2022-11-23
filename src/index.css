@@ -18,6 +18,13 @@ code {
 @import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+.navbar-nav .active {
+  background-color: rgb(248, 249, 250);
+}
+
+.navbar-brand{
+  background-color: rgb(248, 249, 250) !important;
+}
 
 h1 {
   font-family: 'Fredoka One', cursive;
@@ -69,14 +76,15 @@ h1 {
   box-sizing: border-box;
 }
 
-@media (min-width: 576px) .container {
+/*
+@media only screen and (min-width: 576px) {
+  .container 
   max-width: 500px;
-}
+}*/
 
 .container {
   width: 100%;
   padding-right: 25px;
-  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -116,9 +124,9 @@ svg {
 }
 
 .custom-pt-1 {
-  padding-top: 13rem !important;
+  padding-top: 14rem !important;
 }
 
 .custom-pb-2 {
-  padding-bottom: 16rem !important;
+  padding-bottom: 18rem !important;
 }
